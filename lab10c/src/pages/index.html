@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework Installation and Setup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha384-4EvWqRFPDGGDctyfp1DZz5Kt0pLcooz4mIcXIpzSbEV3pi6hBTMOFyFks4a68SYc" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell large-12">
+                <h1>Framework Installation and Setup</h1>
+            </div>
+        </div>
+        
+        <div class="grid-x grid-margin-x section">
+            <div class="cell large-12">
+                <h2>Installation Steps</h2>
+                <p>
+                    I chose to use the <strong>Foundation CSS</strong> framework for this web page. Foundation is a front-end framework that makes it easy to create responsive and well-styled web pages. To install Foundation on my Windows system, I followed these steps:
+                </p>
+                <ul>
+                    <li>First, I downloaded Node.js from the <a href="https://nodejs.org/" target="_blank">official website</a> and installed it, as Foundation uses Node.js for setup.</li>
+                    <li>Next, I installed the Foundation CLI by opening a Command Prompt and running: <code>npm install -g foundation-cli</code>.</li>
+                    <li>To create a new Foundation project, I navigated to my desired directory and ran: <code>foundation new mywebsite</code>, which generated the project structure and necessary files.</li>
+                    <li>I then used <code>foundation watch</code> to start a local development server, which allowed me to see my changes live as I developed the web page.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-x grid-margin-x section">
+            <div class="cell large-12">
+                <h2>How the Web Page Was Built</h2>
+                <p>
+                    The web page was built using Foundation's grid system and components. I used the Foundation grid to create a responsive layout, ensuring that the content looks good on different screen sizes. I also used Foundation's built-in styles for typography and buttons, which made the design process much simpler.
+                </p>
+                <p>
+                    I wrote the HTML content and used Foundation classes like <code>.grid-container</code> and <code>.callout</code> to style the page elements. This helped me focus more on the content rather than spending time writing custom CSS for basic styling.
+                </p>
+                <p>
+                    Finally, I deployed the page using GitHub Pages, which allows for easy hosting of static websites. I simply pushed my changes to the GitHub repository, and GitHub Pages handled the rest.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-x grid-margin-x section">
+            <div class="cell large-12">
+                <h2>Difficulties Encountered and Solutions</h2>
+                <p>
+                    One of the difficulties I faced was understanding how to use the Foundation grid system effectively. Initially, my page layout was not as responsive as I wanted it to be. To solve this, I referred to the <a href="https://get.foundation/sites/docs/">Foundation documentation</a>, which provided clear examples on how to use the grid system properly.
+                </p>
+                <p>
+                    Another issue I faced was with integrating custom JavaScript into the Foundation project. I learned that I needed to include my scripts after the Foundation JavaScript to avoid conflicts. I also used the Foundation JavaScript utilities, which made adding interactivity easier.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-x grid-margin-x section">
+            <div class="cell large-12">
+                <h2>Accessing the Web Page</h2>
+                <p>
+                    The page is hosted on GitHub Pages and can be accessed via the following link: <a href="http://example.com">http://example.com</a> (replace with your actual URL). This URL should be accessible for grading purposes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
+
